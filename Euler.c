@@ -1,8 +1,7 @@
 #include "stdio.h"
 
-int main(){
-//Problem 1
-/*
+void Problem1()
+{
 	int sum=0;
 	for(int i=0;i<1000;i++){
 		if(i%3==0||i%5==0)
@@ -10,8 +9,12 @@ int main(){
 	}
 	printf("\tProblem 1\n");
 	printf("sum of the multiples of 3 or 5 below 1000\t%d\n",sum);
-*/
-//problem 2
+
+}
+
+void Problem2()
+{
+	//problem 2
 	int a=0,b=1;
 	int c,sum;
 
@@ -22,12 +25,19 @@ int main(){
 		if(c%2==0)
 			sum+=c;
 	}
-
+//	sizeof(int)==4;
 	printf("\t%d\n",sum);	
+}
 
-//	sizeof(int)=4;
-//problem 3
-	
+void Problem3()
+{
+
+}
+int main()
+{
+	Problem1();
+	Problem2();
+		
 	return 0;
 }
 
